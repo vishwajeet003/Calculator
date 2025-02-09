@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2013/08/09/05/54/layer-170971_1280.jpg);
+  background-size: cover;
+}
+.container {
+  height: auto;
+  width: 25rem;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(50, 50, 50);
+}
+input {
+  height: 6rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.585);
+  color: white;
+  font-size: 4rem;
+  text-align: right;
+}
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5px;
+  padding: 1rem;
+}
+.btn {
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 2rem;
+  background-color: rgba(0 0 0 / 0.4);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: rgba(31, 31, 31, 0.6);
+}
+.equal-btn {
+  width: 10rem;
+}
+.redbtn {
+  color: hsl(8, 100%, 59%);
+}
+.yel {
+  background-color: hsl(42, 94%, 60%);
+  font-size: 3rem;
+  /* color: black; */
+}
+.yel:hover {
+  background-color: hsl(42, 97%, 73%);
+}
+
+@media (width< 400px) {
+  .container {
+    width: 20rem;
+  }
+  .btn {
+    height: 4rem;
+    width: 4rem;
+  }
+  .equal-btn {
+    width: 8rem;
+  }
+}
