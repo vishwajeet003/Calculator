@@ -9,6 +9,13 @@
       href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
@@ -19,27 +26,31 @@
         ><button class="btn operator-btn" onclick="appendToDisplay('%')">
           %
         </button>
-        <button class="btn yel operator-btn" onclick="appendToDisplay('/')">
-          /
+        <button class="btn operator-btn" onclick="backspaceFunction()">
+          <i class="fa-solid fa-delete-left"></i>
         </button>
         <button class="btn" onclick="appendToDisplay('7')">7</button>
         <button class="btn" onclick="appendToDisplay('8')">8</button
         ><button class="btn" onclick="appendToDisplay('9')">9</button>
-        <button class="btn yel operator-btn" onclick="appendToDisplay('*')">
-          x</button
+        <button class="btn yel operator-btn" onclick="appendToDisplay('/')">
+          /</button
         ><button class="btn" onclick="appendToDisplay('4')">4</button>
         <button class="btn" onclick="appendToDisplay('5')">5</button
         ><button class="btn" onclick="appendToDisplay('6')">6</button>
-        <button class="btn yel operator-btn" onclick="appendToDisplay('-')">
-          -</button
+        <button class="btn yel operator-btn" onclick="appendToDisplay('*')">
+          *</button
         ><button class="btn" onclick="appendToDisplay('1')">1</button>
         <button class="btn" onclick="appendToDisplay('2')">2</button
         ><button class="btn" onclick="appendToDisplay('3')">3</button>
-        <button class="btn yel operator-btn" onclick="appendToDisplay('+')">
-          +</button
+        <button class="btn yel operator-btn" onclick="appendToDisplay('-')">
+          -</button
         ><button class="btn" onclick="appendToDisplay('0')">0</button>
         <button class="btn" onclick="appendToDisplay('.')">.</button>
+
         <button class="btn equal-btn" onclick="calculate()">=</button>
+        <button class="btn yel operator-btn" onclick="appendToDisplay('+')">
+          +
+        </button>
       </div>
     </div>
 
