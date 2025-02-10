@@ -67,9 +67,6 @@ input {
     height: 4rem;
     width: 4rem;
   }
-  .equal-btn {
-    width: 8rem;
-  }
 }
 
 @media (min-width: 408px) {
